@@ -77,11 +77,11 @@ namespace POP._2020
         }
 
         private static void SimpleFormulasCircle()
-        { 
+        {
             Console.WriteLine("The same with the circle");
             Console.Write("Please enter radius: ");
             int radius = int.Parse(Console.ReadLine());
-            Console.WriteLine("The area of the triangle is " + (Math.PI * (radius) * radius) );
+            Console.WriteLine("The area of the triangle is " + (Math.PI * (radius) * radius));
             Console.WriteLine("The perimeter of the triangle is " + 2 * Math.PI * radius);
             Console.ReadKey();
 
@@ -141,7 +141,7 @@ namespace POP._2020
             int numberA = int.Parse(Console.ReadLine());
             Console.Write("Please enter the second number: ");
             int numberB = int.Parse(Console.ReadLine());
-            Console.Write(numberA + "+" +numberB +"=" + numberA+numberB);
+            Console.Write(numberA + "+" + numberB + "=" + numberA + numberB);
             Console.ReadKey();
         }
         //3
@@ -157,5 +157,62 @@ namespace POP._2020
             Console.WriteLine(2 + 15 / 6 * 1 - 7 % 2);
             Console.ReadKey();
         }
-    }
+
+        //4
+
+        private static void MultiplicationThree()
+        {
+            Console.WriteLine("multiplication of three numbers ");
+            Console.Write("Please enter the first number: ");
+            int sideA = int.Parse(Console.ReadLine());
+            Console.Write("Please enter the second number: ");
+            int sideB = int.Parse(Console.ReadLine());
+            Console.Write("Please enter the third number: ");
+            int sideC = int.Parse(Console.ReadLine());
+            Console.WriteLine(sideA + "*" + sideB + "*" + sideC + "=" + sideA * sideB * sideC);
+        }
+        private static void Table()
+        {
+            Console.WriteLine(" multiplication table ");
+            Console.Write("Please enter the number: ");
+            int number = int.Parse(Console.ReadLine());
+            for (int i = 1; i < 11; i++)
+            {
+                Console.WriteLine(number + "x" + i + "=" + number * i);
+            }
+            Console.ReadKey();
+        }
+        private static void Average()
+        {
+            Console.WriteLine("average ");
+            Console.WriteLine("Please enter the first number: ");
+            int sideA = int.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter the second number: ");
+            int sideB = int.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter the third number: ");
+            int sideC = int.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter the fourth number: ");
+            int sideD = int.Parse(Console.ReadLine());
+            Console.WriteLine("The average is " + (sideA + sideB + sideC + sideD) / 4);
+            Console.ReadKey();
+
+        }
+        private static void Between()
+        {
+            Console.WriteLine("Check between 100 and 200");
+            Console.WriteLine("Please enter the number: ");
+            int sideA = int.Parse(Console.ReadLine());
+            if(99<sideA && sideA<201)
+            {
+                Console.WriteLine("The number is between 100 and 200");
+            }
+            else
+            {
+                Console.WriteLine("The number is not between 100 and 200");
+            }
+            Console.ReadKey();
+        }
+
+
+        }
 }
